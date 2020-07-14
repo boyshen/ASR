@@ -1,0 +1,40 @@
+{
+  "DATA_PATH_SOURCE": "/Volumes/SD/data_thchs30/data",
+  "DATA_PATH_TRAIN": "/root/data/data_thchs30/train",
+  "DATA_PATH_VALID": "/root/data/data_thchs30/dev",
+  "DATA_PATH_TEST": "/Volumes/SD/data_thchs30/test",
+  "AUDIO": {
+    "PATH_AUDIO_FEATURE": "/Volumes/SD/VUI/model/acoustic/audio/audio_feature.pickle",
+    "f_type": "mfcc",
+    "mfcc_dim": 13,
+    "frame_length": 256,
+    "frame_shift": 128
+  },
+  "PATH_PINYIN_DICT": "/Volumes/SD/VUI/model/acoustic/pinyin/pinyin.pickle",
+  "MODEL": {
+    "TRANSVERSE": {
+      "dn_hidden_size": 512,
+      "dilated_conv_depth": 3,
+      "width_conv_depth": 4,
+      "multi_dilated_rate": [2,3,4],
+      "dilated_conv_filters": [128, 256, 512],
+      "width_conv_filters": [512, 512, 768, 768],
+      "dropout_rate": 0.5,
+      "l1": 1.0e-4,
+      "l2": 1.0e-4,
+      "activation": "selu",
+      "learning_rate": 0.01,
+      "warmup_steps": 4000,
+      "optimizer_beta_1": 0.9,
+      "optimizer_beta_2": 0.999,
+      "optimizer_epsilon": 1.0e-7,
+      "ckpt_dir": "/Volumes/SD/VUI/model/acoustic/transverse/ckpt",
+      "ckpt_max_to_keep": 3,
+      "PATH_TRANSVERSE_CONFIG": "/Volumes/SD/VUI/model/acoustic/transverse/transverse_config.json",
+      "BATCH_SIZE": 8,
+      "EPOCHS": 50,
+      "VALIDATION_SPLIT": 0.1,
+      "SHUFFLE": true
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "DATA_PATH_SOURCE": "../data/data/",
+  "DATA_PATH_TEST": "../data/test/",
+  "CONFIG_ACOUSTIC": "./acoustic/config.json",
+  "CONFIG_LANGUAGE": "./language/config.json"
+}

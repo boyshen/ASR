@@ -1,0 +1,31 @@
+{
+  "DATA_PATH_SOURCE": "../../data/data",
+  "DATA_PATH_TRAIN": "../../data/train",
+  "DATA_PATH_VALID": "../../data/valid",
+  "DATA_PATH_TEST": "../../data/test",
+  "PATH_PINYIN_DICT": "/Volumes/SD/VUI/model/language/pinyin/pinyin.pickle",
+  "PATH_CHINESE_DICT": "/Volumes/SD/VUI/model/language/chinese/chinese.pickle",
+  "MODEL": {
+    "TRANSFORMER": {
+      "d_model": 512,
+      "heads_num": 8,
+      "forward_hidden": 16,
+      "num_layers": 1,
+      "input_max_positional": 100,
+      "target_max_positional": 100,
+      "dropout_rate": 0.5,
+      "ckpt_dir": "/Volumes/SD/VUI/model/language/transformer/ckpt",
+      "ckpt_max_to_keep": 3,
+      "lr_warmup_steps": 2000,
+      "optimizer_beta_1": 0.9,
+      "optimizer_beta_2": 0.98,
+      "optimizer_epsilon": 1e-9,
+      "pred_max_length": 100,
+      "PATH_TRANSFORMER_CONFIG": "/Volumes/SD/VUI/model/language/transformer/transformer_config.json",
+      "BATCH_SIZE": 8,
+      "EPOCHS": 30,
+      "VALIDATION_SPLIT": 0.1,
+      "SHUFFLE": true
+    }
+  }
+}
