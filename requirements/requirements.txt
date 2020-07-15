@@ -4,7 +4,6 @@ astor==0.7.1
 astunparse==1.6.3
 attrs==19.3.0
 backcall==0.1.0
-bleach==3.1.0
 cachetools==4.1.0
 certifi==2020.4.5.1
 cffi==1.14.0
@@ -61,7 +60,6 @@ mock==3.0.5
 more-itertools==8.0.2
 nbconvert==5.6.1
 nbformat==4.4.0
-nltk==3.4.4
 notebook==6.0.2
 numpy==1.18.4
 oauthlib==3.1.0

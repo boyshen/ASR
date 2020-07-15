@@ -44,6 +44,8 @@
 
 环境：tensorflow-2.2、soundfile、python_speech_features 为必要的库。详细参考：requirements/requirements.txt 
 
+预训练模型下载：链接: https://pan.baidu.com/s/121doTMMAVayv973pSQaiqw  密码: akcr
+
 ### 总结
 
 - 语料数据集[thchs-30](http://www.openslr.org/18/) 中训练数据集10000条，相比 LibriSpeech 不算特别大，这在训练模型时候会容易过拟合。
